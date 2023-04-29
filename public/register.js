@@ -27,7 +27,7 @@ document.querySelector(".kayitOl").addEventListener("click",function(){
     firebase.auth().createUserWithEmailAndPassword(email,sifre)
     .then(function(){
       sessionStorage.setItem('userEmail', email);
-      window.location.href="http://localhost:5000/"
+      window.location.href="http://localhost:5000/login.html"
     })
     .catch(function(error){
       console.log(error.message)
